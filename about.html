@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr" class="font-poppins scroll-smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>title</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/dist/hover.css">
+    <script src="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+</head>
+
+<body class="">
+    
+
+    
+        <div x-data="{ isOpen: false }" class="sticky top-0 flex justify-between py-5 px-[1rem] lg:px-[2rem] z-10 bg-gray-900"
+            id="navBar" >
+            <button href="index.html">
+                <img src="../images/logoblanc.png" class="w-16" id="logoNav">
+            </button>
+
+            <div class="flex items-center justify-between">
+              <button x-data="{ open: false }"
+              @click="isOpen = !isOpen" type="submit"
+              class="flex items-center  space-x-2 focus:outline-none lg:hidden">
+        
+        
+                <div class="w-8 flex items-center justify-center relative">
+                  <span x-bind:class="isOpen ? 'translate-y-0 rotate-45' : '-translate-y-2'"
+                        class="transform transition w-full h-[3px] bg-white absolute"></span>
+                  
+                  <span x-bind:class="isOpen ? 'opacity-0 translate-x-3' : 'opacity-100'"
+                        class="transform transition w-full h-[3px] bg-white absolute"></span>
+                  
+                  <span x-bind:class="isOpen ? 'translate-y-0 -rotate-45' : 'translate-y-2'"
+                        class="transform transition w-full h-[3px] bg-white absolute"></span>
+                </div>
+              </button>
+
+                <div class="hidden space-x-10 lg:inline-block ">
+                    <a id="nav" href="#" class="text-lg text-white ">Accueil</a>
+                    <a id="nav" href="contact.html" class="text-lg text-white ">Nous contacter</a>
+                    <a id="nav" href="gallerie.html" class="text-lg text-white ">Gallerie</a>
+                    <a id="nav" href="about.html" class="text-lg text-white ">A propos</a>
+                    
+                </div>
+
+                <div class="mobile-navbar">
+                    <div class="fixed left-0 w-full bg-cover h-[100vh] p-5 bg-black/90 top-16"
+                        x-show="isOpen" @click.away=" isOpen = false" x-transition.scale.origin.right.duration.400ms.opacity>
+                        <div id="navLinks" class="flex flex-col space-y-12">
+                            <a id="nav" href="#" class="text-lg text-white">Accueil</a>
+                            <a id="nav" href="contact.html" class="text-lg text-white">Nous contacter</a>
+                            <a id="nav" href="gallerie.html" class="text-lg text-white">Gallerie</a>
+                            <a id="nav" href="about.html" class="h-96 text-lg text-white">A propos</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="flex flex-col lg:flex-row py-20 space-x-10 ">
+            <section class="text-gray-600 body-font">
+                <div class="container py-24 mx-auto">
+                    <div class="w-full text-center">
+                        
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                    </svg>
+
+                    <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+                    <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+                    <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                    <p class="text-gray-500">Senior Product Designer</p>
+                    </div>
+                </div>
+            </section>
+            <img class="" src="images/logomodif.png" >
+        </div>
+
+
+        
+
+
+    <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5 ">
+        <aside class="hidden lg:relative lg:col-span-2 lg:block">
+          <img
+            class="absolute inset-0 object-cover w-full h-full"
+            src="./images/imagemase.jpg"
+            alt="Comic Graphic"
+          />
+        </aside>
+      
+        <div class="px-4 py-16 sm:px-6 lg:px-8 lg:col-span-3">
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div>
+              <p class="font-medium">
+                <span class="text-xs tracking-widest uppercase">
+                  Téléphone
+                </span>
+      
+                <a class="block text-2xl sm:text-2xl hover:opacity-75" href="">
+                  0677196938
+                </a>
+              </p>
+      
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div class="mt-6 pt-8 border-t-2 border-gray-800">
+                <p class="font-medium">Production</p>
+      
+                <nav class="flex flex-col mt-4 text-sm text-gray-300 space-y-2">
+                  <a class="hover:opacity-75" href=""> Gallerie </a>
+                  <a class="hover:opacity-75" href=""> Conceptions </a>
+                  <a class="hover:opacity-75" href=""> Réalisations </a>
+                  <a class="hover:opacity-75" href=""> Certifications </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+      
+          <div class="pt-12 mt-2 lg:mt-[5.7rem] border-t-2 border-gray-800">
+            <div class="text-sm text-gray-300 sm:items-center sm:justify-between sm:flex">
+              <div class="flex space-x-3">
+                <a class="hover:opacity-75" href=""> Termes & Conditions </a>
+                <a class="hover:opacity-75" href=""> Nous contacter </a>
+              </div>
+      
+              <p class="mt-4 sm:mt-0">
+                &copy; 2022 SARL TSI.<br>Tous droits réservés
+              </p>
+            </div>
+
+            <img src="./images/logoblanc.png" class="w-24 mt-8">
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+    <script>
+        ScrollReveal().reveal('#navBar', { duration: 1000, distance: '150%' });
+        ScrollReveal().reveal('#logoHero', { delay: 300, duration: 1000, distance: '150%' });
+        ScrollReveal().reveal('#textHero', { delay: 500, duration: 1000, distance: '150%' });
+    </script>
+
+    
+</body>
+
+</html>
