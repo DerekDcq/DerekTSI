@@ -68,17 +68,17 @@
       <div class="hidden space-x-10 lg:inline-block ">
           <a id="nav" href="index.html" class="text-lg text-white font-medium ">Accueil</a>
           <a id="nav" href="contact.html" class="text-lg text-white font-medium ">Nous contacter</a>
-          <a id="nav" href="gallerie.html" class="text-lg text-white font-medium ">Gallerie</a>
+          <a id="nav" href="Galerie.html" class="text-lg text-white font-medium ">Galerie</a>
           
       </div>
 
       <div class="mobile-navbar">
-          <div class="fixed left-0 w-full bg-cover h-[100vh] p-5 bg-black/90 top-16 lg:hidden"
+          <div class="fixed text-right right-0 w-1/2 bg-cover h-[100vh] p-5 bg-gray-900 top-16"
               x-show="isOpen" @click.away=" isOpen = false" x-transition.scale.origin.right.duration.400ms.opacity>
               <div id="navLinks" class="flex flex-col space-y-12 justify-center text-center">
                   <a id="nav" href="index.html" class="text-lg text-white font-medium">Accueil</a>
                   <a id="nav" href="contact.html" class="text-lg text-white font-medium">Nous contacter</a>
-                  <a id="nav" href="gallerie.html" class="text-lg text-white font-medium">Gallerie</a>
+                  <a id="nav" href="Galerie.html" class="text-lg text-white font-medium">Galerie</a>
                   
               </div>
           </div>
@@ -111,7 +111,7 @@
               <button type="submit" value="send" class="text-white bg-gray-900 border-0 py-2 px-6 hover:bg-gray-800 rounded text-lg">Envoyer</button>
               <p class="text-xs text-gray-500 pb-5 mt-3">Nos équipes font leurs possible pour vous répondre au plus vite.</p>
             </form>
-            <div class="w-full  flex relative"id="map">
+            <div class="w-full  flex relative" id="map">
               <iframe width="100%" height="100%" class="px-3 lg:px-0 rounded-lg" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d662299.286405787!2d2.593992372636179!3d49.57687834553642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e83f6628627d33%3A0x29705ae8ec4279b2!2sSARL%20T.S.I!5e0!3m2!1sfr!2sfr!4v1663240786228!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
               
             </div>
@@ -158,10 +158,10 @@
                     <p class="font-medium">Production</p>
           
                     <nav class="flex flex-col mt-4 text-sm text-gray-300 space-y-2">
-                      <a class="hover:opacity-75" href=""> Gallerie </a>
-                      <a class="hover:opacity-75" href=""> Conceptions </a>
-                      <a class="hover:opacity-75" href=""> Réalisations </a>
-                      <a class="hover:opacity-75" href=""> Certifications </a>
+                      <a class="hover:opacity-75" href="galerie.html"> Galerie </a>
+                      <a class="hover:opacity-75" href="galerie.html"> Conceptions </a>
+                      <a class="hover:opacity-75" href="galerie.html"> Réalisations </a>
+                      <a class="hover:opacity-75" href="index.html#about"> Certifications </a>
                     </nav>
                   </div>
                 </div>
@@ -171,7 +171,7 @@
                 <div class="text-sm text-gray-300 sm:items-center sm:justify-between sm:flex">
                   <div class="flex space-x-3">
                     <a class="hover:opacity-75" href=""> Termes & Conditions </a>
-                    <a class="hover:opacity-75" href=""> Nous contacter </a>
+                    <a class="hover:opacity-75" href="contact.html"> Nous contacter </a>
                   </div>
           
                   <p class="mt-4 sm:mt-0">
