@@ -48,17 +48,17 @@
       <div class="hidden space-x-10 lg:inline-block ">
         <a id="nav" href="index.html" class="text-lg text-white font-medium ">Accueil</a>
         <a id="nav" href="contact.html" class="text-lg text-white font-medium ">Nous contacter</a>
-        <a id="nav" href="gallerie.html" class="text-lg text-white font-medium ">Gallerie</a>
+        <a id="nav" href="Galerie.html" class="text-lg text-white font-medium ">Galerie</a>
 
       </div>
 
       <div class="mobile-navbar">
-        <div class="fixed left-0 w-full bg-cover h-[100vh] p-5 bg-black/90 top-16" x-show="isOpen"
+        <div class="fixed text-right right-0 w-1/2 bg-cover h-[100vh] p-5 bg-gray-900 top-16" x-show="isOpen"
           @click.away=" isOpen = false" x-transition.scale.origin.right.duration.400ms.opacity>
           <div id="navLinks" class="flex flex-col space-y-12">
             <a id="nav" href="index.html" class="text-lg text-white font-medium">Accueil</a>
             <a id="nav" href="contact.html" class="text-lg text-white font-medium">Nous contacter</a>
-            <a id="nav" href="gallerie.html" class="text-lg text-white font-medium">Gallerie</a>
+            <a id="nav" href="Galerie.html" class="text-lg text-white font-medium">Galerie</a>
 
           </div>
         </div>
@@ -163,18 +163,18 @@
   <section>
     <div class="px-4 pt-8 mx-auto max-w-screen-xl flex items-center">
       <div class="max-w-xl mx-auto text-center">
-        <h1 class="text-gray-600 font-extrabold text-3xl" id="gallerie">
-          Visitez notre gallerie.
+        <h1 class="text-gray-600 font-extrabold text-3xl" id="Galerie">
+          Visitez notre Galerie.
           <strong class="font-extrabold text-gray-900 sm:block">
             Explorez notre métier.
           </strong>
         </h1>
 
-        <p class="mt-4 sm:leading-relaxed sm:text-xl text-gray-600" id="textGallerie">
+        <p class="mt-4 sm:leading-relaxed sm:text-xl text-gray-600" id="textGalerie">
           Visionnez ci-dessous, une série de photo et d'images tirées de nos réalisations.
         </p>
 
-        <span class="inline-block h-1 w-20 rounded bg-gray-900 mt-8 " id="lineGallerie"></span>
+        <span class="inline-block h-1 w-20 rounded bg-gray-900 mt-8 " id="lineGalerie"></span>
 
       </div>
     </div>
@@ -259,10 +259,10 @@
               <p class="font-medium">Production</p>
 
               <nav class="flex flex-col mt-4 text-sm text-gray-300 space-y-2">
-                <a class="hover:opacity-75" href=""> Gallerie </a>
-                <a class="hover:opacity-75" href=""> Conceptions </a>
-                <a class="hover:opacity-75" href=""> Réalisations </a>
-                <a class="hover:opacity-75" href=""> Certifications </a>
+                <a class="hover:opacity-75" href="galerie.html"> Galerie </a>
+                <a class="hover:opacity-75" href="galerie.html"> Conceptions </a>
+                <a class="hover:opacity-75" href="galerie.html"> Réalisations </a>
+                <a class="hover:opacity-75" href="index.html#about"> Certifications </a>
               </nav>
             </div>
           </div>
@@ -272,7 +272,7 @@
           <div class="text-sm text-gray-300 sm:items-center sm:justify-between sm:flex">
             <div class="flex space-x-3">
               <a class="hover:opacity-75" href=""> Termes & Conditions </a>
-              <a class="hover:opacity-75" href=""> Nous contacter </a>
+              <a class="hover:opacity-75" href="contact.html"> Nous contacter </a>
             </div>
 
             <p class="mt-4 sm:mt-0">
@@ -369,12 +369,12 @@
   </script>
 
   <script>
-    ScrollReveal().reveal('#gallerie', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#textGallerie', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#lineGallerie', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#open', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#open2', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#open3', { duration: 1000, distance: '150%' });
+    ScrollReveal().reveal('#Galerie', { duration: 1000, distance: '150%' });
+    ScrollReveal().reveal('#textGalerie', { duration: 1000, distance: '150%' });
+    ScrollReveal().reveal('#lineGalerie', { duration: 1000, distance: '150%' });
+    ScrollReveal().reveal('#open', { duration: 1000, distance: '150%', delay: 200 });
+    ScrollReveal().reveal('#open2', { duration: 1000, distance: '150%', delay: 400});
+    ScrollReveal().reveal('#open3', { duration: 1000, distance: '150%', delay: 600 });
   </script>
 </body>
 
