@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>title</title>
-  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="/dist/output.css">
   <link rel="stylesheet" href="/dist/gallery.css">
   <script src="script.js" defer></script>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -48,7 +48,7 @@
       <div class="hidden space-x-10 lg:inline-block ">
         <a id="nav" href="index.html" class="text-lg text-white font-medium ">Accueil</a>
         <a id="nav" href="contact.html" class="text-lg text-white font-medium ">Nous contacter</a>
-        <a id="nav" href="Galerie.html" class="text-lg text-white font-medium ">Galerie</a>
+        <a id="nav" href="galerie.html" class="text-lg text-white font-medium ">Galerie</a>
 
       </div>
 
@@ -58,7 +58,7 @@
           <div id="navLinks" class="flex flex-col space-y-12">
             <a id="nav" href="index.html" class="text-lg text-white font-medium">Accueil</a>
             <a id="nav" href="contact.html" class="text-lg text-white font-medium">Nous contacter</a>
-            <a id="nav" href="Galerie.html" class="text-lg text-white font-medium">Galerie</a>
+            <a id="nav" href="galerie.html" class="text-lg text-white font-medium">Galerie</a>
 
           </div>
         </div>
@@ -74,7 +74,7 @@
 
 
   <button id="close">
-    <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
+    <div id="overlay" class="fixed z-40 top-0 hidden  w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"></div>
   </button>
 
   <div id="dialog"
@@ -181,8 +181,8 @@
   </section>
 
 
-
-  <div class="flex flex-col lg:flex-row  pt-12 pb-20">
+  
+  <div class="flex flex-col lg:flex-row  pt-12 pb-20 " >
     <button id="open" href="" class="py-6 px-6 flex flex-col lg:px-12 overflow-hidden ">
       <img class="object-cover w-full h-48 rounded-t-xl" src="images/reseauair.jpg" alt="" />
 
@@ -232,7 +232,7 @@
 
 
 
-  <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5 z-10">
+  <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5">
     <aside class="hidden lg:relative lg:col-span-2 lg:block">
       <img class="absolute inset-0 object-cover w-full h-full" src="./images/imagemase.jpg" alt="Comic Graphic" />
     </aside>
@@ -345,6 +345,9 @@
       overlay3.classList.add('hidden');
     });
   </script>
+
+
+
 
 
   <script>
