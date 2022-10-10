@@ -24,7 +24,7 @@
 
   <div class="h-[100vh]">
     <div x-data="{ isOpen: false }"
-      class="sticky top-0 flex justify-between py-4 px-[1rem] lg:px-[2rem] z-10 bg-gray-900" id="navBar">
+      class="sticky top-0 flex justify-between py-4 px-[1rem] lg:px-[2rem] z-10 bg-transparent" id="navBar">
       <button href="index.html">
         <img src="../images/logoblanc.png" class="w-16" id="logoNav">
       </button>
@@ -69,11 +69,11 @@
 
 
     <div
-      class="bg-hero flex flex-col justify-between bg-cover bg-center items-center w-full h-[80vh] absolute bg-scroll"
+      class="bg-hero flex flex-col justify-between bg-cover bg-center items-center w-full h-[85vh] absolute top-0 bg-scroll"
       id="bgHero">
 
-      <div class="relative w-44 lg:w-72 top-32 lg:top-40 bg-white bg-opacity-70 shadow-lg rounded-3xl">
-        <img href="index.html" src="../images/logomodif.png" class="px-2 py-2" id="logoHero">
+      <div class="relative w-44 lg:w-72 top-32 lg:top-40 bg- bg-opacity-70 shadow-lg rounded-3xl">
+        <img href="index.html" src="../images/logoBlancBleu.png" class="px-2 py-2" id="logoHero">
       </div>
 
       <h1 class="text-white text-3xl hidden lg:flex relative text-center font-medium top-16" id="textHero">
@@ -280,14 +280,22 @@
   </div>
 
 
-  <div class="flex flex-col text-center justify-center">
+  <div class="flex flex-col text-center justify-center pb-32">
 
     <h2 class="text-3xl font-extrabold text-gray-900  pb-12" id="expert">
       Études de cas.
     </h2>
 
-    <div id="textExpert">
+    <div id="textExpert" class="text-lg font-medium text-center text-gray-700 pb-12">
+      Nos experts vous proposent leurs savoir-faire en terme de schématisation et modélisation.
+    </div>
 
+    <div class="relative flex justify-center">
+      <model-viewer alt="LOGO entreprise 3D" src="./images/logotsi2.glb" ar environment-image="./images/night.hdr" shadow-intensity="5" camera-controls touch-action="pan-y" camera-orbit="90deg 100deg 4m"></model-viewer>
+    </div>
+
+    <div class="flex justify-center">
+      <span class="inline-block h-1 w-20 rounded bg-gray-900 mt-32" id="lineGalerie"></span>
     </div>
 
 
@@ -296,7 +304,7 @@
 
 
 
-  <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5 ">
+  <footer class="text-white bg-gray-900 lg:grid lg:grid-cols-5">
     <aside class="hidden lg:relative lg:col-span-2 lg:block">
       <img class="absolute inset-0 object-cover w-full h-full" src="./images/imagemase.jpg" alt="Comic Graphic" />
     </aside>
@@ -333,10 +341,10 @@
             <div class="flex space-x-3">
               <a class="hover:opacity-75" href=""> Termes & Conditions </a>
               <a class="hover:opacity-75" href="contact.html"> Nous contacter </a>
-            </div>
+            </div
 
             <p class="mt-4 sm:mt-0">
-              &copy; 2022 SARL TSI.<br>Tous droits réservés
+              &copy; 2022 SARL TSI.<br>Tous droits réservés0
             </p>
           </div>
 
@@ -352,25 +360,25 @@
 
   <script>
     ScrollReveal().reveal('#navBar', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#logoHero', { delay: 300, duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#textHero', { delay: 500, duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#about', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#textMase', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#imageMase', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#more', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#stat', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#textStat', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#euro', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#person', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#team', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#trust', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#air', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#metal', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#qualify', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#textQualify', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#buttonQualify', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#expert', { duration: 1000, distance: '150%' });
-    ScrollReveal().reveal('#textExpert', { duration: 1000, distance: '150%' });
+    ScrollReveal().reveal('#logoHero', { delay: 300, duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#textHero', { delay: 500, duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#about', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#textMase', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#imageMase', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#more', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#stat', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#textStat', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#euro', { duration: 1000, distance: '150%', origin: 'left', delay: 200 });
+    ScrollReveal().reveal('#person', { duration: 1000, distance: '150%', origin: 'left', delay: 400 });
+    ScrollReveal().reveal('#team', { duration: 1000, distance: '150%', origin: 'left', delay: 600  });
+    ScrollReveal().reveal('#trust', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#air', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#metal', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#qualify', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#textQualify', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#buttonQualify', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#expert', { duration: 1000, distance: '150%', origin: 'left'  });
+    ScrollReveal().reveal('#textExpert', { duration: 1000, distance: '150%', origin: 'left'  });
   </script>
 
   <script>
